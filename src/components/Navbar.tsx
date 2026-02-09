@@ -28,12 +28,22 @@ export function Navbar() {
 	return (
 		<header className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
 			<div className="container mx-auto px-4 py-4 flex items-center justify-between">
-				<Link href="/" className="flex items-center gap-2">
-					<span className="text-3xl">🎮</span>
-					<span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-						Game Vault
-					</span>
-				</Link>
+				<SignedOut>
+					<Link href="/" className="flex items-center gap-2">
+						<span className="text-3xl">🎮</span>
+						<span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+							Game Vault
+						</span>
+					</Link>
+				</SignedOut>
+				<SignedIn>
+					<Link href="/dashboard" className="flex items-center gap-2">
+						<span className="text-3xl">🎮</span>
+						<span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+							Game Vault
+						</span>
+					</Link>
+				</SignedIn>
 
 				<nav className="flex items-center gap-6">
 
