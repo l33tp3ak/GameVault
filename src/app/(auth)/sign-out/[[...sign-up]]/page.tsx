@@ -1,10 +1,11 @@
 
-import {SignIn} from "@clerk/nextjs";
 
-export default function SignInPage() {
+import {SignUp} from "@clerk/nextjs";
+
+export default function SignUpPage() {
 	return (
 		<div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-gray-900 to-black">
-			<SignIn />
+			<SignUp />
 		</div>
 	);
 }
